@@ -39,7 +39,7 @@ export const siteData = {
                 { name: "Python", icon: "devicon-python-plain colored" },
                 { name: "R", icon: "devicon-r-plain colored" },
                 { name: "Java", icon: "devicon-java-plain colored" },
-                { name: "SQL", icon: "devicon-mysql-plain colored" }, // Generic SQL proxy
+                { name: "SQL", icon: "devicon-mysql-plain colored" },
                 { name: "MongoDB", icon: "devicon-mongodb-plain colored" }
             ]
         },
@@ -51,27 +51,26 @@ export const siteData = {
                 { name: "Scikit-learn", icon: "devicon-scikitlearn-plain colored" },
                 { name: "TensorFlow", icon: "devicon-tensorflow-original colored" },
                 { name: "PyTorch", icon: "devicon-pytorch-original colored" },
-                { name: "Tidyverse", icon: "devicon-r-original" }, // Fallback to R related
-                { name: "ggplot2", icon: "devicon-r-original" }   // Fallback
+                { name: "Tidyverse", image: "/images/skills/tidyverse.png" }
             ]
         },
         {
             category: "Visualización y Apps",
             items: [
                 { name: "Matplotlib", icon: "devicon-matplotlib-plain colored" },
-                { name: "Seaborn", icon: "devicon-python-plain" }, // Fallback
-                { name: "Plotly", icon: "devicon-python-plain" },  // Fallback
+                { name: "Seaborn", icon: "devicon-python-plain" },
+                { name: "Plotly", icon: "devicon-python-plain" },
                 { name: "Streamlit", icon: "devicon-streamlit-plain colored" },
-                { name: "Power BI", icon: "devicon-windows8-original colored" }, // Proxy
-                { name: "Shiny", icon: "devicon-r-plain colored" }     // Proxy
+                { name: "Power BI", image: "/images/skills/powerbi.png" },
+                { name: "Shiny", icon: "devicon-r-plain colored" }
             ]
         },
         {
             category: "GIS & Cloud",
             items: [
-                { name: "QGIS", icon: "devicon-qgis-plain colored" }, // Need to check if exists, otherwise fallback
-                { name: "ArcGIS Pro", icon: "devicon-google-plain" }, // No icon, proxy? Maybe just text in component handling
-                { name: "Google Earth Engine", icon: "devicon-google-plain colored" },
+                { name: "QGIS", image: "/images/skills/qgis.png" },
+                { name: "ArcGIS Pro", image: "/images/skills/arcgis.png" },
+                { name: "Google Earth Engine", image: "/images/skills/gee.png" },
                 { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark colored" },
                 { name: "GCP", icon: "devicon-googlecloud-plain colored" }
             ]

@@ -15,7 +15,11 @@ const { skills } = siteData;
           <div class="tech-list">
             {category.items.map(tech => (
               <div class="tech-item" title={tech.name}>
-                <i class={`tech-icon ${tech.icon}`}></i>
+                {tech.image ? (
+                  <img src={tech.image} alt={tech.name} class="tech-img" />
+                ) : (
+                  <i class={`tech-icon ${tech.icon}`}></i>
+                )}
                 <span class="tech-name">{tech.name}</span>
               </div>
             ))}
@@ -70,7 +74,9 @@ const { skills } = siteData;
     padding: 0.75rem;
     border-radius: 12px;
     background-color: var(--agro-light);
-    min-width: 80px;
+    width: 90px;
+    height: 100px;
+    justify-content: center;
     transition: background-color 0.2s;
   }
   
@@ -80,13 +86,19 @@ const { skills } = siteData;
 
   .tech-icon {
     font-size: 2.5rem;
-    /* Ensure colored icons render correctly if devicon supports it */
+  }
+
+  .tech-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
   }
 
   .tech-name {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--charcoal);
     text-align: center;
+    line-height: 1.2;
   }
 </style>
